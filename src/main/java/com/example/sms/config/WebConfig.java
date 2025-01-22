@@ -12,7 +12,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**") // Apply to all /api/** endpoints
-                .allowedOrigins("https://stocks-dashboard.up.railway.app/") // Allow frontend's origin
+                .allowedOrigins("https://stock-dashboard-cyan.vercel.app/") // Allow frontend's origin
                 .allowedMethods("GET", "POST", "PUT", "DELETE") // Allow these HTTP methods
                 .allowedHeaders("*") // Allow all headers
                 .allowCredentials(true); // Allow credentials (cookies, headers)
