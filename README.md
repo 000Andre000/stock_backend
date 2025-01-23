@@ -28,7 +28,7 @@
      ```
 
 4. **Run the Spring Boot Application**
-   -To Run the backend run the Smsbackend.java file.
+   - To Run the backend run the Smsbackend.java file.
    - Use Maven to build and run the application:
      ```bash
      ./mvnw spring-boot:run
