@@ -39,7 +39,7 @@
 6. **Access the Backend**
    - The backend API should now be accessible at `http://localhost:8080`.
    - The Database need not be configured as the current project is linked to the MySql Database hosted on Railway.
-   - If you want to use a locally hosted database, you will have to configure the **application.properties&** file in *`src/main/resources*`
+   - If you want to use a locally hosted database, you will have to configure the **application.properties&** file in *`src/main/resources`*
 
 ## Assumptions or Limitations
 
