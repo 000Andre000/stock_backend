@@ -28,16 +28,18 @@
      ```
 
 4. **Run the Spring Boot Application**
+   -To Run the backend run the Smsbackend.java file.
    - Use Maven to build and run the application:
      ```bash
      ./mvnw spring-boot:run
      ```
    - If using *VS CODE* run the application using Run Java on the Drop Down
-    
      
 
-5. **Access the Backend**
+6. **Access the Backend**
    - The backend API should now be accessible at `http://localhost:8080`.
+   - The Database need not be configured as the current project is linked to the MySql Database hosted on Railway.
+   - If you want to use a locally hosted database, you will have to configure the **application.properties&** file in *`src/main/resources*`
 
 ## Assumptions or Limitations
 
@@ -47,6 +49,7 @@
 
 ## Links
 
-- **Deployed Backend Application:** [Backend Application URL](<insert-backend-deployment-url>)
-- **Live API Documentation:** [API Documentation URL](<insert-api-documentation-url>)
+- **Deployed Backend Application: ** [Backend Application URL](<https://stocks-dashboard.up.railway.app/>) **
+- View the data in the database at => ** [Backend Application URL](<https://stocks-dashboard.up.railway.app/api/stocks>) **
+
 
