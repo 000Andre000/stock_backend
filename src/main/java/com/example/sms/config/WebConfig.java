@@ -1,7 +1,5 @@
 package com.example.sms.config;
 
-
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -11,11 +9,10 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/api/**") // Apply to all /api/** endpoints
-        .allowedOrigins("https://stock-dashboard-cyan.vercel.app") 
-                .allowedMethods("GET", "POST", "PUT", "DELETE") // Allow these HTTP methods
+        registry.addMapping("/**") // Allow all endpoints
+                .allowedOrigins("*") // Allow all origins
+                .allowedMethods("*") // Allow all HTTP methods
                 .allowedHeaders("*") // Allow all headers
-                .allowCredentials(true); // Allow credentials (cookies, headers)
+                .allowCredentials(false); // Disallow credentials for wildcard origins
     }
 }
-
